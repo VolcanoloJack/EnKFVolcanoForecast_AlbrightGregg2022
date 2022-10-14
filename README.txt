@@ -66,7 +66,7 @@ laterally expanding reservoir under constant pressure. Their contents are listed
 account for reservoir stress, but allows for faster calculation while testing workflow.
 
 
-***ParamExtract_23Feb22.m***: This function processes the large output files of the "Assimilate_*.m" functions above and calculates the filter's performance at the
+***ParamExtract_23Feb22.m***: This function processes the large output files of the "Assimilate*.m" functions above and calculates the filter's performance at the
 final time step relative to the original synthetic model through 4 quantitative criteria: RMSE, reservoir wall tensile stress misfit, stable parameter misfit, and 
 non-unique parameter misfit. When multiple files are loaded into this function, their results are additionally analyzed as a group for the purpose of calculating 
 the mean and percentile values.
