@@ -60,3 +60,6 @@ These functions require the following dependencies in the same folder:
 **qfilt_rows.m**: Interquartile filter to remove outliers
 
 **YangEllipsoid**: Folder of functions to conduct an analytical solution for surface deformation, after Yang et al (1988). Not used in published experiments and cannot account for reservoir stress, but allows for faster calculation while testing workflow.
+
+
+***ParamExtract_23Feb22.m***: This function processes the large output files of the "Assimilate_*.m" functions above and calculates the filter's performance at the final time step relative to the original synthetic model through 4 quantitative criteria: RMSE, reservoir wall tensile stress misfit, stable parameter misfit, and non-unique parameter misfit. When multiple files are loaded into this function, their results are additionally analyzed as a group for the purpose of calculating the mean and percentile values.
