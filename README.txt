@@ -1,4 +1,5 @@
-Matlab code and synthetic data used in Albright and Gregg (2022) to test the effectiveness of different variants of the Ensemble Kalman Filter (EnKF) when applied to geodetic displacement at simulated unresting volcanic systems.
+Matlab code and synthetic data used in Albright and Gregg (2022) to test the effectiveness of different variants of the Ensemble Kalman Filter (EnKF) when applied to
+geodetic displacement at simulated unresting volcanic systems.
 
 ***AssimilateClean_11Oct22.m*** - Matlab function for completing an EnKF analysis of the synthetic data. Used in most experiments conducted.
 
@@ -7,7 +8,9 @@ Matlab code and synthetic data used in Albright and Gregg (2022) to test the eff
 
 These functions require the following dependencies in the same folder:
 
-***Synth_P_06Mar21.mat and Synth_R_06Mar21.mat***: These files each contain the synthetic GPS and InSAR data used in this study as well as the parameter time series used to generate them. The "P" variant corresponds to a simulation in which magma inflation is driven by a pressurizing reservoir, while the "R" variant uses a laterally expanding reservoir under constant pressure. Their contents are listed below:
+***Synth_P_06Mar21.mat and Synth_R_06Mar21.mat***: These files each contain the synthetic GPS and InSAR data used in this study as well as the parameter time series
+used to generate them. The "P" variant corresponds to a simulation in which magma inflation is driven by a pressurizing reservoir, while the "R" variant uses a 
+laterally expanding reservoir under constant pressure. Their contents are listed below:
 
 	- "GPS": Matlab cell structure containing synthetic GPS data. Each row of the cell array corresponds to a different GPS station. 
 	   In order from left to right, the columns contain:
@@ -59,7 +62,8 @@ These functions require the following dependencies in the same folder:
 
 **qfilt_rows.m**: Interquartile filter to remove outliers
 
-**YangEllipsoid**: Folder of functions to conduct an analytical solution for surface deformation, after Yang et al (1988). Not used in published experiments and cannot account for reservoir stress, but allows for faster calculation while testing workflow.
+**YangEllipsoid**: Folder of functions to conduct an analytical solution for surface deformation, after Yang et al (1988). Not used in published experiments and cannot 
+account for reservoir stress, but allows for faster calculation while testing workflow.
 
 
 ***ParamExtract_23Feb22.m***: This function processes the large output files of the "Assimilate_*.m" functions above and calculates the filter's performance at the
